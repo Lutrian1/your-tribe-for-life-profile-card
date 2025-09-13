@@ -1,2 +1,11 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<script>
+    import Header from "$lib/components/header.svelte";
+    import background from "$lib/components/background.svelte";
+    import Background from "$lib/components/background.svelte";
+</script>
+
+<!-- COMPONENT: HEADER--> 
+<Header />
+
+<!-- COMPONENT: BACKGROUND--> 
+<Background />

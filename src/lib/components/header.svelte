@@ -1,0 +1,71 @@
+<script>
+    import Logo from "$lib/components/logo.svelte";
+    import Header_Background from '$lib/assets/header-background.avif';
+</script>
+
+<header>
+    <img src="{Header_Background}" alt="" class="header-bg">
+    <section class="logo-section">
+        <p class="made-by">Made By <strong class="strong-with-bg">THE</strong> Luuk Tol</p>
+        <svg viewBox="0 0 279 1" fill="none" class="line-1">
+            <rect width="279" height="2" fill="#261F0D"/>
+        </svg>
+        <Logo />
+        <svg viewBox="0 0 279 1" fill="none" class="line-2">
+            <rect width="279" height="2" fill="#261F0D"/>
+        </svg>
+    </section>
+</header>
+
+<style>
+
+:root{
+--line-1: 18px;
+}
+
+header{
+    position: relative;
+    max-width: 700px;
+}
+
+.header-bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    max-width: 700px;
+}
+
+.strong-with-bg{
+    background-color: var(--background-color);
+    font-size: 1.4rem;
+}
+
+.logo-section{
+    padding: 10px 25px 0 25px;
+}
+
+.made-by{
+    margin: 0;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    transform: translateY(calc(-11px + var(--line-1)));
+    z-index: 1;
+}
+
+.line-1{
+    transform: translateY(var(--line-1));
+    z-index: -1;
+}
+
+.line-2{
+    transform: translateY(-22px);
+}
+
+.line-1, .line-2{
+    width: 100%;
+}
+
+</style>

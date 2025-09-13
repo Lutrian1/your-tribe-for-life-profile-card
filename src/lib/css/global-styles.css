@@ -1,0 +1,71 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--main-font);
+    background-color: var(--main-background-color);
+    color: var(--main-text-color);
+    background: var(--background-color);
+}
+
+/*----------------------------------- FONTS --------------------------------------*/
+
+@font-face {
+    font-family: 'Pent-Up-Rage';
+    src: url($lib/assets/fonts/Pent-Up-Rage.ttf);
+}
+
+@font-face {
+    font-family: 'Acknowledgement';
+    src: url($lib/assets/fonts/Acknowledgement.otf);
+}
+
+@font-face {
+    font-family: 'Bulletin-Gothic';
+    src: url($lib/assets/fonts/Bulletin-Gothic.otf);
+}
+
+@font-face {
+    font-family: 'Delicious-Handrawn';
+    src: url($lib/assets/fonts/Delicious-Handrawn-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Daily-Magazine-Regular';
+    src: url($lib/assets/fonts/Daily-Magazine-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Daily-Magazine-Medium';
+    src: url($lib/assets/fonts/Daily-Magazine-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Daily-Magazine-ExtraBoldItalic';
+    src: url($lib/assets/fonts/Daily-Magazine-ExtraBoldItalic.ttf);
+}
+
+@font-face {
+    font-family: 'Daily-Magazine-Black';
+    src: url($lib/assets/fonts/Daily-Magazine-Black.ttf);
+}
+
+/*----------------------------------- ALLE VARIABELEN --------------------------------------*/
+
+body {
+    
+    /* COLORS */
+    --main-color: #261F0D;
+    --secondary-color: #C91833;
+    --background-color: #E9E5DA;
+}
+
+/*----------------------------------- ALLE VARIABELEN --------------------------------------*/
+p{
+    font-family: Daily-Magazine-Regular, Georgia, Times, 'Times New Roman', serif;
+}
+
+strong{
+   font-family: Daily-Magazine-ExtraBoldItalic, Georgia, Times, 'Times New Roman', serif; 
+   font-weight: normal;
+}
