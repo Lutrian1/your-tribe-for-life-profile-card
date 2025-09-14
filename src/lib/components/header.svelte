@@ -25,14 +25,14 @@
 
 header{
     position: relative;
-    max-width: 700px;
+    max-width: 850px;
 }
 
 .header-bg{
     position: absolute;
     width: 100%;
     height: 100%;
-    max-width: 700px;
+    max-width: 850px;
 }
 
 .strong-with-bg{

@@ -6,7 +6,10 @@
 </script>
 
 <svelte:head>
+
 	<link rel="icon" href={logo_icon} />
+	<link rel="stylesheet" href="{global_styles}">
+
 </svelte:head>
 
 {@render children?.()}

@@ -3,8 +3,7 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: var(--main-font);
-    background-color: var(--main-background-color);
-    color: var(--main-text-color);
+    color: var(--main-color);
     background: var(--background-color);
 }
 
@@ -50,6 +49,17 @@ html, body {
     src: url($lib/assets/fonts/Daily-Magazine-Black.ttf);
 }
 
+@font-face {
+    font-family: 'Eroded';
+    src: url($lib/assets/fonts/BoldGrunge-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Mirror';
+    src: url($lib/assets/fonts/Daily-Mirror.ttf);
+}
+
+
 /*----------------------------------- ALLE VARIABELEN --------------------------------------*/
 
 body {
@@ -66,6 +76,6 @@ p{
 }
 
 strong{
-   font-family: Daily-Magazine-ExtraBoldItalic, Georgia, Times, 'Times New Roman', serif; 
-   font-weight: normal;
+    font-family: Daily-Magazine-ExtraBoldItalic, Georgia, Times, 'Times New Roman', serif; 
+    font-weight: normal;
 }

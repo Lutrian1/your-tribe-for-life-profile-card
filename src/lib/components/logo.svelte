@@ -40,15 +40,15 @@
     color: var(--main-color);
 }
 
-@supports (font-size: clamp(4.5rem, 10vw, 8rem)) {
+@supports (font-size: clamp(4rem, 10vw, 8rem)) {
     .pent-up-rage-D, .bulletin-gothic-K{
-        font-size: clamp(4.5rem, 10vw, 8rem);
+        font-size: clamp(4rem, 10vw, 8rem);
     }
 }
 
-@supports (font-size: clamp(2rem, 4rem, 6rem)) {
+@supports (font-size: clamp(2.2rem, 4rem, 6rem)) {
     .acknowledgement-A, .daily-magazine-ILY, .delicious-handrawn-A, .daily-magazine-NUS{
-        font-size: clamp(2.625rem, 10vw, 6rem);
+        font-size: clamp(2.2rem, 10vw, 6rem);
     }
 }
 
