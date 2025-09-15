@@ -2,9 +2,7 @@
     import video from '$lib/assets/prison-vid.webm';
 </script>
 
-<main>
-
-    <section class="content-section">
+    <section>
 
         <article>
 
@@ -18,6 +16,7 @@
             <div class="video-content">
 
                 <video width="200" height="100" autoplay="autoplay" class="prison-vid">
+                    <track default kind="captions" srclang="nl" />
                     <source src="{video}" type="video/webm" />
                 </video>
 
@@ -29,7 +28,7 @@
                 sit amet porttitor quam facilisis vel. Duis eu turpis nisl. Fusce dolor erat, tincidunt in sapien eu, placerat mattis augue. 
                 In eu tempor odio. Mauris vitae neque eleifend, volutpat est eu, convallis metus. Quisque eleifend nibh sed enim sollicitudin iaculis. 
                 In hac habitasse platea dictumst. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut scelerisque felis. 
-                Duis consectetur, nis Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut scelerisque felis. Duis consectetur, 
+                Duis consectetur, nis Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 nisl ut ornare ultricies. </p>
 
             <h4>Check me Github Hieronder</h4>
@@ -40,9 +39,9 @@
                 sit amet porttitor quam facilisis vel. Duis eu turpis nisl. Fusce dolor erat, tincidunt in sapien eu, placerat mattis augue. 
                 In eu tempor odio. Mauris vitae neque eleifend, volutpat est eu, convallis metus. Quisque eleifend nibh sed enim sollicitudin iaculis. 
                 In hac habitasse platea dictumst. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut scelerisque felis. 
-                Duis consectetur, nis Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut scelerisque felis. Duis consectetur, 
+                Duis consectetur, nis Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 nisl ut ornare ultricies. </p>
-                
+
         </aside>
 
         <svg viewBox="0 0 279 1" fill="none" class="line-3">
@@ -58,17 +57,13 @@
 
     </section>
 
-</main>
 
 <style>
-    
-main{
-    padding: 0 1vw 1vw 1vw;
-}
 
-.content-section{
+section{
     border: solid var(--main-color);
     padding: 0 2vw 2vw 2vw;
+    margin: 0 1vw 1vw 1vw;;
     position: relative;
 }
 
@@ -89,6 +84,10 @@ h2{
 
     @media (min-width: 500px) {
         font-size: 2.5rem;
+        background-color: var(--main-color);
+        color: var(--background-color);
+        width: calc(100% + 4vw); /* Grootte van de padding in .content-section + 2 om het te balanceren*/
+        transform: translateX(-2vw); /* Grootte van de padding in .content-section */
     }
 
     .responsive-br-big-screen{
@@ -130,9 +129,9 @@ h2{
     @supports (font-size: clamp(7rem, 10vw, 9rem)) {
        
         .span-with-bg-black{
-            font-size: clamp(7rem, 10vw, 9rem);
+            font-size: clamp(5.5rem, 8.5vw, 8.5rem);
              @media (min-width: 500px) {
-                font-size: clamp(5rem, 8vw, 8rem);
+                font-size: clamp(5.5rem, 8.5vw, 8.5rem);
             }
         }
     }
@@ -144,6 +143,7 @@ h3{
     font-size: 1.2rem;
     @media (min-width: 500px) {
         text-align: center;
+        margin: 0.7rem 0;
     }
 }
 
@@ -178,6 +178,9 @@ aside{
         filter: grayscale(0.85);
         width: 70%;
         height: 100%;
+        border: solid var(--main-color) 3px;
+        object-fit: cover;
+        pointer-events: none;
     }
     @media (min-width: 375px) {
         justify-content: center;
@@ -205,6 +208,9 @@ h4{
     font-size: 0.8rem;
     @media (min-width: 400px) {
         font-size: 0.7rem;
+    }
+    @media (min-width: 500px) {
+        font-size: 1rem;
     }
 }
 

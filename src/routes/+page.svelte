@@ -1,14 +1,13 @@
 <script>
-    import Header from "$lib/components/header.svelte";
-    import Main from "$lib/components/main-content.svelte";
-    import Background from "$lib/components/background.svelte";
+    import { Main_content } from "$lib";
+    import { Sub_content }from "$lib";
+
+    const { data } = $props()
+    const luukInfo = data.luukInfo
 </script>
 
-<!-- COMPONENT: HEADER--> 
-<Header />
-
 <!-- COMPONENT: MAIN CONTENT--> 
-<Main />
+<Main_content />
 
-<!-- COMPONENT: BACKGROUND--> 
-<Background />
+<!-- COMPONENT: SUB CONTENT--> 
+<Sub_content { luukInfo } />

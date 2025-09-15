@@ -4,5 +4,5 @@ export async function load({ url }) {
   );
   const luukData = await luukResponse.json();
 
-  return { luukInfo: luukData.data };
+  return { luukInfo: luukData.data[0] };
 }

@@ -59,6 +59,11 @@ html, body {
     src: url($lib/assets/fonts/Daily-Mirror.ttf);
 }
 
+@font-face {
+    font-family: 'Top-Secret';
+    src: url($lib/assets/fonts/Top-Secret.ttf);
+}
+
 
 /*----------------------------------- ALLE VARIABELEN --------------------------------------*/
 
