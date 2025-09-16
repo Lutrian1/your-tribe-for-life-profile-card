@@ -1,5 +1,7 @@
 <script>
+
   export let className = "";
+
 </script>
 
 <svg viewBox="0 0 279 1" fill="none" class="{className}">
@@ -15,6 +17,11 @@
 
 .line-2{
     transform: translateY(-22px);
+}
+
+.line-3{
+    width: 100%;
+    height: 1rem;
 }
 
 .line-1, .line-2{

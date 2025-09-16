@@ -6,4 +6,8 @@ export { default as Header } from './components/Header.svelte'
 export { default as Background } from './components/Background.svelte'
 export { default as Main_content } from './components/Main_content.svelte'
 export { default as Sub_content} from './components/Sub_content.svelte'
+
 export { default as Line} from './assets/Line.svelte'
+export { default as GithubLogo} from './assets/GithubLogo.svelte'
+export { default as InstagramSVG} from './assets/InstagramSVG.svelte'
+export { default as BlueskySVG} from './assets/BlueskySVG.svelte'

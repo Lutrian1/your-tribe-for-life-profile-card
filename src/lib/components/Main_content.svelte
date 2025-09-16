@@ -1,4 +1,9 @@
 <script>
+    import { BlueskySVG } from '$lib';
+    import { GithubLogo } from '$lib';
+    import { InstagramSVG } from '$lib';
+    import { Line } from "$lib";
+
     import video from '$lib/assets/prison-vid.webm';
 </script>
 
@@ -15,7 +20,7 @@
 
             <div class="video-content">
 
-                <video width="200" height="100" autoplay="autoplay" class="prison-vid">
+                <video width="200" height="100" autoplay="autoplay" class="prison-vid" loop>
                     <track default kind="captions" srclang="nl" />
                     <source src="{video}" type="video/webm" />
                 </video>
@@ -44,9 +49,13 @@
 
         </aside>
 
-        <svg viewBox="0 0 279 1" fill="none" class="line-3">
-            <rect width="279" height="4" fill="#261F0D"/>
-        </svg>
+        <div class="links">
+            <InstagramSVG />
+            <GithubLogo />
+            <BlueskySVG />
+        </div>
+
+        <Line className = "line-3"/>
 
         <footer>
 
@@ -63,8 +72,9 @@
 section{
     border: solid var(--main-color);
     padding: 0 2vw 2vw 2vw;
-    margin: 0 1vw 1vw 1vw;;
+    margin: 0 1vw 1vw 1vw;
     position: relative;
+    max-width: 850px;
 }
 
 article{
@@ -105,7 +115,7 @@ h2{
     }
 }
 
-    @supports (font-size: clamp(6rem, 10vw, 8rem)) {
+    @supports (font-size: clamp(4rem, 10vw, 6rem)) {
         h2{
             font-size: clamp(4rem, 10vw, 6rem);
 
@@ -126,12 +136,12 @@ h2{
     }
 }
 
-    @supports (font-size: clamp(7rem, 10vw, 9rem)) {
+    @supports (font-size: clamp(4rem, 10vw, 6rem)) {
        
         .span-with-bg-black{
             font-size: clamp(5.5rem, 8.5vw, 8.5rem);
              @media (min-width: 500px) {
-                font-size: clamp(5.5rem, 8.5vw, 8.5rem);
+                font-size: 5.5rem
             }
         }
     }
@@ -214,9 +224,29 @@ h4{
     }
 }
 
-.line-3{
-    width: 100%;
-    height: 1rem;
+.links{
+    position: absolute;
+    top: 50%;
+    right: 3vw;
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    @media (min-width: 359px) {
+        flex-direction: row;
+        top: calc(50% + 3.5vh);
+        right: 2vw;
+    }
+    @media (min-width: 388px) {
+        top: calc(50% + 5.5vh);
+        gap: 0.5rem;
+    }
+    @media (min-width: 425px) {
+        gap: 1.5rem;
+        right: 2vw;
+    }
+    @media (min-width: 500px) {
+        display: none;
+    }
 }
 
 footer{

@@ -5,6 +5,10 @@ html, body {
     font-family: var(--main-font);
     color: var(--main-color);
     background: var(--background-color);
+     @media (min-width: 920px) {
+        width: 200vw;
+        height: 200vh;
+    }
 }
 
 /*----------------------------------- FONTS --------------------------------------*/
@@ -83,4 +87,11 @@ p{
 strong{
     font-family: Daily-Magazine-ExtraBoldItalic, Georgia, Times, 'Times New Roman', serif; 
     font-weight: normal;
+}
+
+main{
+    @media (min-width: 920px) {
+        display: flex;
+        flex-direction: row;
+    }
 }
