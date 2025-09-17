@@ -6,14 +6,16 @@
 
 <section>
     <h5>Classified</h5>
+
     <Line className="line-4"/>
-    <Line className="line-5"/>
 
     <p>GEÏNFORMEERD DOSSIER – [ TEAM: [ { luukInfo.squads } ] ]</p>
     <p>ONDERWERP: Persoonsdossier & Capaciteiteninventarisatie van { luukInfo.name } aka "{ luukInfo.nickname }"</p>
 
     <p>DOSSIERNUMMER: { luukInfo.id }</p>
     <p>STATUS: { luukInfo.role }</p>
+
+    <Line className="line-5"/>
 
     <h6>1: BIOGRAFISCHE GEGEVENS & PROFIEL</h6>
 
@@ -71,6 +73,19 @@
 
 <style>
 
+section{
+    border: solid var(--main-color);
+    padding: 0 2vw 2vw 2vw;
+    margin: 0 1vw 1vw 1vw;
+    position: relative;
+    max-width: 850px;
+    background-color: white;
+
+    @media (min-width: 920px) {
+        margin: -17vh 1vw 1vw 1vw;
+    }
+}
+
     h5{
         font-family: Top-Secret, Georgia, Times, 'Times New Roman', serif; 
         margin: 2vh;
@@ -83,6 +98,20 @@
         h5{
             font-size: clamp(2.5rem, 10vw, 4rem);
         }
+    }
+
+    strong{
+        font-style: normal;
+    }
+
+    s{
+        background-color: var(--main-color);
+    }
+
+    h6, h7, h8{
+        font-size: 2rem;
+        margin: 1vh;
+        font-weight: 800;
     }
 
 </style>

@@ -63,7 +63,8 @@
             <p>luuk.tol@hva.nl</p>
             
         </footer>
-
+        
+    <div class="tape-section"></div>
     </section>
 
 
@@ -75,6 +76,7 @@ section{
     margin: 0 1vw 1vw 1vw;
     position: relative;
     max-width: 850px;
+    max-height: 850px;
 }
 
 article{
