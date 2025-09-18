@@ -4,6 +4,7 @@
 </script>
 
 <div class="background-noise"></div>
+
 <img src="{Fake_Paper_Mobile}" alt="" class="fake-paper-mobile">
 <img src="{Fake_Paper_Desktop}" alt="" class="fake-paper-desktop">
 
@@ -16,11 +17,11 @@
     right: -50%;
     bottom: -50%;
     width: 200%;
-    height: 200vh;
+    height: 200%;
     background: transparent url('http://assets.iceable.com/img/noise-transparent.png') repeat 0 0;
     background-repeat: repeat;
     opacity: .9;
-    z-index: 1000;
+    z-index: 100;
     pointer-events: none;
 }
 
@@ -32,7 +33,7 @@
         left: 0;
         width: 200%;
         height: 200%;
-        z-index: -1;
+        z-index: -2;
         opacity: 0.5;
     }
 
@@ -49,7 +50,7 @@
         left: -5%;
         width: 110%;
         height: 100%;
-        z-index: -1;
+        z-index: -2;
         opacity: 0.8;
     }
 

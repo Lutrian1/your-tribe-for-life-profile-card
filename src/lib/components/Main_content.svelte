@@ -3,11 +3,23 @@
     import { GithubLogo } from '$lib';
     import { InstagramSVG } from '$lib';
     import { Line } from "$lib";
+    import { Magnifying_glass } from '$lib';
+    import { Header } from "$lib";
+    import { Tape } from "$lib";
 
     import video from '$lib/assets/prison-vid.webm';
 </script>
 
-    <section>
+<!-- COMPONENT: MAGNIFYING GLASS SCRIPT--> 
+<Magnifying_glass>
+
+    <!-- COMPONENT: TAPE--> 
+    <Tape />
+            
+    <!-- COMPONENT: HEADER--> 
+    <Header />
+
+    <section class="zoomable-section">
 
         <article>
 
@@ -63,207 +75,206 @@
             <p>luuk.tol@hva.nl</p>
             
         </footer>
-        
-    <div class="tape-section"></div>
+
     </section>
 
+</Magnifying_glass>
 
 <style>
 
-section{
-    border: solid var(--main-color);
-    padding: 0 2vw 2vw 2vw;
-    margin: 0 1vw 1vw 1vw;
-    position: relative;
-    max-width: 850px;
-    max-height: 850px;
-}
-
-article{
-    @media (min-width: 500px) {
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-h2{
-    font-family: Eroded, Georgia, Times, 'Times New Roman', serif;
-    color: var(--main-color);
-    margin: 0;
-    letter-spacing: 0.5rem;
-    line-height: 5.5rem;
-    font-size: 4rem;
-
-    @media (min-width: 500px) {
-        font-size: 2.5rem;
-        background-color: var(--main-color);
-        color: var(--background-color);
-        width: calc(100% + 4vw); /* Grootte van de padding in .content-section + 2 om het te balanceren*/
-        transform: translateX(-2vw); /* Grootte van de padding in .content-section */
+    section{
+        border: solid var(--main-color);
+        padding: 0 2vw 2vw 2vw;
+        margin: 0 1vw 1vw 1vw;
+        position: relative;
+        max-width: 850px;
+        max-height: 850px; 
     }
 
-    .responsive-br-big-screen{
-        display: none;
+    article{
         @media (min-width: 500px) {
-            display: inline;
+            display: flex;
+            flex-direction: column;
         }
     }
 
-    .responsive-br{
-        display: inline;
+    h2{
+        font-family: Eroded, Georgia, Times, 'Times New Roman', serif;
+        color: var(--main-color);
+        margin: 0;
+        letter-spacing: 0.5rem;
+        line-height: 5.5rem;
+        font-size: 4rem;
+
+        @media (min-width: 500px) {
+            font-size: 2.5rem;
+            background-color: var(--main-color);
+            color: var(--background-color);
+            width: calc(100% + 4vw); /* Grootte van de padding in .content-section + 2 om het te balanceren*/
+            transform: translateX(-2vw); /* Grootte van de padding in .content-section */
+        }
+
+        .responsive-br-big-screen{
+            display: none;
+            @media (min-width: 500px) {
+                display: inline;
+            }
+        }
+
+        .responsive-br{
+            display: inline;
+            @media (min-width: 500px) {
+                display: none;
+            }
+        }
+    }
+
+        @supports (font-size: clamp(4rem, 10vw, 6rem)) {
+            h2{
+                font-size: clamp(4rem, 10vw, 6rem);
+
+                @media (min-width: 500px) {
+                    text-align: center;
+                }
+            }
+        }
+
+    .span-with-bg-black{
+        background-color: var(--main-color);
+        color: var(--background-color);
+        text-align: center;
+        font-size: 7rem;
+
+        @media (min-width: 500px) {
+            font-size: 5rem;
+        }
+    }
+
+        @supports (font-size: clamp(4rem, 10vw, 6rem)) {
+        
+            .span-with-bg-black{
+                font-size: clamp(5.5rem, 8.5vw, 8.5rem);
+                @media (min-width: 500px) {
+                    font-size: 5.5rem
+                }
+            }
+        }
+
+    h3{
+        margin: 0;
+        font-family: Mirror, Georgia, Times, 'Times New Roman', serif;
+        color: var(--main-color);
+        font-size: 1.2rem;
+        @media (min-width: 500px) {
+            text-align: center;
+            margin: 0.7rem 0;
+        }
+    }
+
+    aside{
+        position: absolute;
+        top: 1vh;
+        max-width: 60%;
+        right: 1vw;
+        display: grid;
+        grid-template-rows: auto 1fr; 
+        grid-template-areas: 
+            "vid vid vid"
+            "p-1 h4 p-2"; 
+        gap: 10px;
+        .non-read-text:first-child{
+            grid-area: p-1;
+        }
+        .non-read-text:nth-child(2){
+            grid-area: p-2;
+        }
+        @media (min-width: 500px) {
+            position: static;
+            max-width: 100%;
+        }
+    }
+
+    .video-content{
+        grid-area: vid;
+        display: flex;
+        justify-content: flex-end;
+        .prison-vid{
+            filter: grayscale(0.85);
+            width: 70%;
+            height: 100%;
+            border: solid var(--main-color) 3px;
+            object-fit: cover;
+            pointer-events: none;
+        }
+        @media (min-width: 375px) {
+            justify-content: center;
+            .prison-vid{
+                width: 80%;
+            }
+        }
+    }
+
+
+    .non-read-text{
+        font-size: 0.3rem;
+        @media (min-width: 500px) {
+        font-size: 0.6rem; 
+        }
+    }
+
+    h4{
+        margin: 0;
+        font-family: Eroded, Georgia, Times, 'Times New Roman', serif;
+        writing-mode: vertical-rl;
+        display: flex;
+        align-items: flex-end;
+        grid-area: h4;
+        font-size: 0.8rem;
+        @media (min-width: 400px) {
+            font-size: 0.7rem;
+        }
+        @media (min-width: 500px) {
+            font-size: 1rem;
+        }
+    }
+
+    .links{
+        position: absolute;
+        top: 50%;
+        right: 3vw;
+        display: flex;
+        flex-direction: column;
+        gap: 0.1rem;
+        @media (min-width: 359px) {
+            flex-direction: row;
+            top: calc(50% + 3.5vh);
+            right: 2vw;
+        }
+        @media (min-width: 388px) {
+            top: calc(50% + 5.5vh);
+            gap: 0.5rem;
+        }
+        @media (min-width: 425px) {
+            gap: 1.5rem;
+            right: 2vw;
+        }
         @media (min-width: 500px) {
             display: none;
         }
     }
-}
 
-    @supports (font-size: clamp(4rem, 10vw, 6rem)) {
-        h2{
-            font-size: clamp(4rem, 10vw, 6rem);
-
-             @media (min-width: 500px) {
-                text-align: center;
-            }
+    footer{
+        display: flex;
+        align-items: center;
+        p{
+            margin: 0;
+            width: 50%;
+            font-size: 0.8rem;
+        }
+        p:nth-child(2){
+            text-align: center;
+            font-size: 1.5rem;
         }
     }
-
-.span-with-bg-black{
-    background-color: var(--main-color);
-    color: var(--background-color);
-    text-align: center;
-    font-size: 7rem;
-
-    @media (min-width: 500px) {
-        font-size: 5rem;
-    }
-}
-
-    @supports (font-size: clamp(4rem, 10vw, 6rem)) {
-       
-        .span-with-bg-black{
-            font-size: clamp(5.5rem, 8.5vw, 8.5rem);
-             @media (min-width: 500px) {
-                font-size: 5.5rem
-            }
-        }
-    }
-
-h3{
-    margin: 0;
-    font-family: Mirror, Georgia, Times, 'Times New Roman', serif;
-    color: var(--main-color);
-    font-size: 1.2rem;
-    @media (min-width: 500px) {
-        text-align: center;
-        margin: 0.7rem 0;
-    }
-}
-
-aside{
-    position: absolute;
-    top: 1vh;
-    max-width: 60%;
-    right: 1vw;
-    display: grid;
-    grid-template-rows: auto 1fr; 
-    grid-template-areas: 
-        "vid vid vid"
-        "p-1 h4 p-2"; 
-    gap: 10px;
-    .non-read-text:first-child{
-        grid-area: p-1;
-    }
-    .non-read-text:nth-child(2){
-        grid-area: p-2;
-    }
-    @media (min-width: 500px) {
-        position: static;
-        max-width: 100%;
-    }
-}
-
-.video-content{
-    grid-area: vid;
-    display: flex;
-    justify-content: flex-end;
-    .prison-vid{
-        filter: grayscale(0.85);
-        width: 70%;
-        height: 100%;
-        border: solid var(--main-color) 3px;
-        object-fit: cover;
-        pointer-events: none;
-    }
-    @media (min-width: 375px) {
-        justify-content: center;
-        .prison-vid{
-            width: 80%;
-        }
-    }
-}
-
-
-.non-read-text{
-    font-size: 0.3rem;
-    @media (min-width: 500px) {
-       font-size: 0.6rem; 
-    }
-}
-
-h4{
-    margin: 0;
-    font-family: Eroded, Georgia, Times, 'Times New Roman', serif;
-    writing-mode: vertical-rl;
-    display: flex;
-    align-items: flex-end;
-    grid-area: h4;
-    font-size: 0.8rem;
-    @media (min-width: 400px) {
-        font-size: 0.7rem;
-    }
-    @media (min-width: 500px) {
-        font-size: 1rem;
-    }
-}
-
-.links{
-    position: absolute;
-    top: 50%;
-    right: 3vw;
-    display: flex;
-    flex-direction: column;
-    gap: 0.1rem;
-    @media (min-width: 359px) {
-        flex-direction: row;
-        top: calc(50% + 3.5vh);
-        right: 2vw;
-    }
-    @media (min-width: 388px) {
-        top: calc(50% + 5.5vh);
-        gap: 0.5rem;
-    }
-    @media (min-width: 425px) {
-        gap: 1.5rem;
-        right: 2vw;
-    }
-    @media (min-width: 500px) {
-        display: none;
-    }
-}
-
-footer{
-    display: flex;
-    align-items: center;
-    p{
-        margin: 0;
-        width: 50%;
-        font-size: 0.8rem;
-    }
-    p:nth-child(2){
-        text-align: center;
-        font-size: 1.5rem;
-    }
-}
-
 
 </style>

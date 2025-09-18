@@ -16,43 +16,43 @@
 
 <style>
 
-:root{
---line-1: 18px;
-}
-
-header{
-    position: relative;
-    max-width: calc(850px + 3vw + 25px); /* 850px MAX + De padding van de main_content: Section + 25px van de padding in .logo-section*/
-    @media (min-width: 850px) {
-        margin: 0 0 0 1vw;
+    :root{
+    --line-1: 18px;
     }
-}
 
-.header-bg{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    max-width: calc(850px + 3vw + 25px);
-}
+    header{
+        position: relative;
+        max-width: calc(850px + 3vw + 25px); /* 850px MAX + De padding van de main_content: Section + 25px van de padding in .logo-section*/
+        @media (min-width: 850px) {
+            margin: 0 0 0 1vw;
+        }
+    }
 
-.strong-with-bg{
-    background-color: var(--background-color);
-    font-size: 1.4rem;
-}
+    .header-bg{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        max-width: calc(850px + 3vw + 25px);
+    }
 
-.logo-section{
-    padding: 10px 25px 0 25px;
-}
+    .strong-with-bg{
+        background-color: var(--background-color);
+        font-size: 1.4rem;
+    }
 
-.made-by{
-    margin: 0;
-    position: absolute;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    font-size: 14px;
-    transform: translateY(calc(-11px + var(--line-1)));
-    z-index: 1;
-}
+    .logo-section{
+        padding: 10px 25px 0 25px;
+    }
+
+    .made-by{
+        margin: 0;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+        transform: translateY(calc(-11px + var(--line-1)));
+        z-index: 1;
+    }
 
 </style>
