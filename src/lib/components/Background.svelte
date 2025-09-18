@@ -62,13 +62,18 @@
         background: none; 
         padding: 0; 
         cursor: pointer;
-    @media (min-width: 920px) {
-        position: absolute;
-        right: 2rem;
-        bottom: 2rem;
-        width: 100px;
-        height: 100px;
-    }
+        
+        @media (min-width: 920px) {
+            position: absolute;
+            right: 2rem;
+            bottom: 2rem;
+            width: 8rem;
+            height: 8rem;
+            img{
+                width: 8rem;
+                height: 8rem;
+            }
+        }
 }
 
 .fake-paper-mobile{
