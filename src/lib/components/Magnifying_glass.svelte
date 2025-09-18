@@ -47,6 +47,8 @@
 </script>
 
 <div
+  role="region"
+  aria-label="Zoomable section" 
   bind:this={section}
   class="zoom-section"
   on:mouseenter={() => toggleHover(true)}
