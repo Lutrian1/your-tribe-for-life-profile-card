@@ -8,6 +8,7 @@
     import { Tape } from "$lib";
 
     import video from '$lib/assets/prison-vid.webm';
+    import Fake_Paper_Mobile from '$lib/assets/fake-paper-mobile.avif';
 </script>
 
 <!-- COMPONENT: MAGNIFYING GLASS SCRIPT--> 
@@ -89,6 +90,7 @@
         position: relative;
         max-width: 850px;
         max-height: 850px; 
+        background-color: var(--background-color);
     }
 
     article{

@@ -1,9 +1,12 @@
 <script>
     import Fake_Paper_Mobile from '$lib/assets/fake-paper-mobile.avif';
     import Fake_Paper_Desktop from '$lib/assets/fake-paper-desktop.avif';
+    import BG_Audio from '$lib/assets/BG_Audio.mp3';
 </script>
 
 <div class="background-noise"></div>
+
+<audio src="{ BG_Audio }" autoplay loop></audio>.
 
 <img src="{Fake_Paper_Mobile}" alt="" class="fake-paper-mobile">
 <img src="{Fake_Paper_Desktop}" alt="" class="fake-paper-desktop">

@@ -8,6 +8,7 @@ export { default as Main_content } from './components/Main_content.svelte'
 export { default as Sub_content} from './components/Sub_content.svelte'
 export { default as Magnifying_glass} from './components/Magnifying_glass.svelte'
 export { default as Tape} from './components/Tape.svelte'
+export { default as Hint_Text} from './components/Hint_Text.svelte'
 
 export { default as Line} from './assets/Line.svelte'
 export { default as GithubLogo} from './assets/GithubLogo.svelte'

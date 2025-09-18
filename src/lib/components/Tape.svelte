@@ -21,12 +21,14 @@
         content: ' - ';
         width: 75px;
         min-height: 30px;
-        top: 5vh;  
-        left: -1vw;
+        top: 0vh;  
+        left: 1vw;
         transform: translate(-50%, -50%) rotate(-2deg);
         @media (min-width: 920px) {
-            width: 150px;
+            width: 100px;
             min-height: 50px;
+            top: 5vh;  
+            left: 1vw;
         }
     }
 
@@ -34,23 +36,27 @@
         content: ' - ';
         width: 40px;
         min-height: 30px;
-        top: 2vh;  
+        top: 0vh;  
         right: 0;
+        transform: translate(-50%, -50%) rotate(9deg);
         @media (min-width: 920px) {
-            width: 70px;
+            width: 150px;
             min-height: 60px;
+            top: 2vh;  
+            right: -5vw;
         }
     }
 
     .tape-3{
-        bottom: -6vh;  
+        bottom: -3vh;  
         left: 50%;
         width: 100px;
         min-height: 30px;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%) rotate(7deg);
         @media (min-width: 920px) {
             width: 200px;
             min-height: 50px;
+            bottom: -6vh;  
         }
     }
 

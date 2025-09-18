@@ -4,7 +4,7 @@
     import Header_Background from '$lib/assets/header-background.avif';
 </script>
 
-<header>
+<header class="zoomable-section">
     <img src="{Header_Background}" alt="" class="header-bg">
     <section class="logo-section">
         <p class="made-by">Made By <strong class="strong-with-bg">THE</strong> Luuk Tol</p>
@@ -23,6 +23,7 @@
     header{
         position: relative;
         max-width: calc(850px + 3vw + 25px); /* 850px MAX + De padding van de main_content: Section + 25px van de padding in .logo-section*/
+        background-color: var(--background-color);
         @media (min-width: 850px) {
             margin: 0 0 0 1vw;
         }

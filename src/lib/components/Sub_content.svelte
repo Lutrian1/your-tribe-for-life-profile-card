@@ -90,7 +90,6 @@
         max-width: 850px;
         background-color: white;
         position: relative;
-        z-index: 1;
         font-family: var(--main-font); /* Ensure font is applied to sections */
     }
 

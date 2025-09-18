@@ -2,7 +2,7 @@
   export let section;
   let magnifier;
   let content;
-  let scale = 4; // Zoom scale factor
+  let scale = 5; // Zoom scale factor
   
   // Mouse position relative to the section
   let mouseX = 0;
@@ -65,27 +65,11 @@
 
 <style>
 @media (min-width: 920px) {
-  .zoom-section {
-    position: relative;
-    overflow: hidden; /* Ensure the zoomed content doesn't spill out */
-    cursor: zoom-in;
-    transition: transform 0.3s ease, border-radius 0.3s ease; /* Transition border-radius smoothly */
-  }
 
   .zoom-section:hover {
     /* Dynamically calculate a full circle on hover */
     animation: borderAnimation 0.5s ease-in-out; /* Pulse animation once */
-  }
-
-  .magnifier {
-    position: absolute;
-    pointer-events: none;
-    display: none; /* Hide by default */
-    transition: transform 0.3s ease;
-  }
-
-  .zoom-section:hover .magnifier {
-    display: block;
+    z-index: 100;
   }
 
   .content {
