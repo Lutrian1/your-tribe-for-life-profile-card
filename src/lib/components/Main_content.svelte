@@ -33,7 +33,7 @@
 
             <div class="video-content">
 
-                <video width="200" height="100" autoplay="autoplay" class="prison-vid" loop>
+                <video width="200" height="100" autoplay class="prison-vid" loop muted>
                     <track default kind="captions" srclang="nl" />
                     <source src="{video}" type="video/webm" />
                 </video>
