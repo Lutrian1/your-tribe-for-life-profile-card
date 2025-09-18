@@ -6,10 +6,9 @@
 
 <div class="background-noise"></div>
 
-<audio src="{ BG_Audio }" autoplay loop></audio>.
+<audio src="{ BG_Audio }" autoplay loop></audio>
 
 <img src="{Fake_Paper_Mobile}" alt="" class="fake-paper-mobile">
-<img src="{Fake_Paper_Desktop}" alt="" class="fake-paper-desktop">
 
 <style>
 
@@ -28,39 +27,14 @@
     pointer-events: none;
 }
 
-@media (max-width: 767px){
-
-    .fake-paper-mobile{
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 200%;
-        height: 200%;
-        z-index: -2;
-        opacity: 0.5;
-    }
-
-    .fake-paper-desktop{
-        display: none;
-    }
-
-}
-@media (min-width: 768px){
-
-    .fake-paper-desktop{
-        position: fixed;
-        top: 0;
-        left: -5%;
-        width: 110%;
-        height: 100%;
-        z-index: -2;
-        opacity: 0.8;
-    }
-
-    .fake-paper-mobile{
-        display: none;
-    }
-
+.fake-paper-mobile{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    z-index: -2;
+    opacity: 0.5;
 }
     
 </style>
