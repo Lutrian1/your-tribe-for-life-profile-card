@@ -1,5 +1,5 @@
 <script>
-    import Line from "$lib/assets/Line.svelte";
+    import Line from '$lib/assets/Line.svelte';
     import { Magnifying_glass } from '$lib';
     import { Tape } from "$lib";
 
