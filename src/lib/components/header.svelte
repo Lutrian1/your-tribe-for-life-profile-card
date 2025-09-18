@@ -1,6 +1,7 @@
 <script>
     import { Logo } from "$lib";
     import { Line } from "$lib";
+    
     import Header_Background from '$lib/assets/header-background.avif';
 </script>
 

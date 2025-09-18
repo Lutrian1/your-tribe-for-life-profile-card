@@ -2,10 +2,10 @@
     import { BlueskySVG } from '$lib';
     import { GithubLogo } from '$lib';
     import { InstagramSVG } from '$lib';
-    import { Line } from "$lib";
+    import { Line } from '$lib';
     import { Magnifying_glass } from '$lib';
-    import { Header } from "$lib";
-    import { Tape } from "$lib";
+    import { Header } from '$lib';
+    import { Tape } from '$lib';
 
     import video from '$lib/assets/prison-vid.webm';
     import Fake_Paper_Mobile from '$lib/assets/fake-paper-mobile.avif';
